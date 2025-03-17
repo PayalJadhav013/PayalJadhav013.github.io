@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Online Exam System</title>
+<link rel="stylesheet" href="style.css"> 
+</head>
+<body>
+
+<div id="login-page" class="container">
+    <h2>Login</h2>
+    <form id="loginForm">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        <button type="submit">Login</button>
+        <p id="loginError" class="error"></p> 
+    </form>
+</div>
+
+<div id="subject-selection-page" class="container" style="display: none;">
+    <h2>Select Subject</h2>
+    <ul class="subject-list">
+        <li><a href="#" onclick="loadExam('python')">Python</a></li>
+        <li><a href="#" onclick="loadExam('java')">Java</a></li>
+        <li><a href="#" onclick="loadExam('cpp')">C++</a></li>
+    </ul>
+</div>
+
+<div id="exam-page" class="container" style="display: none;">
+    <h2>Exam: <span id="subjectName"></span></h2>
+    <form id="examForm">
+        <div id="questions"></div>
+        <button type="submit">Submit</button>
+    </form>
+    <p id="result" class="result"></p>
+</div>
+
+<script src="script.js"></script> 
+
+</body>
+</html>

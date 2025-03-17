@@ -1,42 +1,262 @@
 <!DOCTYPE html>
-<html>
-<head>
-<title>Online Exam System</title>
-<link rel="stylesheet" href="style.css"> 
-</head>
-<body>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payal Jadhav - Portfolio</title>
+    <!-- Custom CSS Link -->
+    <link rel="stylesheet" href="style.css" />
+    <!-- Font Awesome Icon link -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <!-- Social Icon Link -->
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header-sec">
+      <nav>
+        <ul>
+          <li><a class="active" href="#hero">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#certifications">Certifications</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
 
-<div id="login-page" class="container">
-    <h2>Login</h2>
-    <form id="loginForm">
-        <label for="username">Username:</label>
-        <input type="text" id="username" name="username" required>
-        <label for="password">Password:</label>
-        <input type="password" id="password" name="password" required>
-        <button type="submit">Login</button>
-        <p id="loginError" class="error"></p> 
-    </form>
-</div>
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+      <div class="hero-content">
+        <!-- Profile Picture -->
+        <div class="profile-pic">
+          <img src="./images/Me.jpg" alt="Payal Jadhav" />
+        </div>
+        <h1>I am Payal Jadhav</h1>
+        <h2>Java Fullstack Developer</h2>
+        <p>
+          "Passionate Java Full Stack Developer with a love for crafting
+          scalable, high-performance applications!"
+        </p>
+        <div class="btn-box">
+          <a href="#contact">Hire Me</a>
+          <a href="#contact">Let's Talk</a>
+        </div>
+      </div>
+    </section>
 
-<div id="subject-selection-page" class="container" style="display: none;">
-    <h2>Select Subject</h2>
-    <ul class="subject-list">
-        <li><a href="#" onclick="loadExam('python')">Python</a></li>
-        <li><a href="#" onclick="loadExam('java')">Java</a></li>
-        <li><a href="#" onclick="loadExam('cpp')">C++</a></li>
-    </ul>
-</div>
+    <!-- About Section -->
+    <section id="about">
+      <div class="container">
+        <h2>About</h2>
+        <div class="about-box">
+          <p>
+            I’m Payal Sachin Jadhav from Pune!
+            I love programming, as well as learning new things!
+            Feel free to get in touch or take a look at my past work below.
+          </p>
+        </div>
+      </div>
+    </section>
 
-<div id="exam-page" class="container" style="display: none;">
-    <h2>Exam: <span id="subjectName"></span></h2>
-    <form id="examForm">
-        <div id="questions"></div>
-        <button type="submit">Submit</button>
-    </form>
-    <p id="result" class="result"></p>
-</div>
+        <!-- Education Section -->
+        <section id="education">
+            <div class="container">
+              <h2>Education</h2>
+              <div class="education-box">
+                <div class="education-item">
+                  <h3>PDEA'S College Of Engineering Manjari</h3>
+                  <p>Bachelor of Engineering | CGPA: 7.0</p>
+                </div>
+                <div class="education-item">
+                  <h3>JSPM's Bhivarabai Sawant Polytechnic</h3>
+                  <p>Diploma in Computer Engineering | 80.97%</p>
+                </div>
+                <div class="education-item">
+                  <h3>K. Tukaram Dhondiba Pathare Vidyalaya</h3>
+                  <p>10th | 76%</p>
+                </div>
+              </div>
+            </div>
+          </section>
 
-<script src="script.js"></script> 
+    <!-- Experience Section -->
+    <section id="experience">
+      <div class="container">
+        <h2>Experience</h2>
+        <div class="experience-box">
+          <div class="experience-item">
+            <h3>SAP Code Unnati</h3>
+            <p>
+              Advance Course [ ML, Deep Learning & Computer Vision, IoT, SAP
+              ABAP]
+            </p>
+            <p>Worked on project: IN-FACT using Streamlit, Python.</p>
+          </div>
+          <div class="experience-item">
+            <h3>IBM SkillsBuild</h3>
+            <p>Frontend Web Development</p>
+            <p>
+              Worked on project: Doctor Appointment System using PHP, HTML, and
+              JavaScript with XAMPP.
+            </p>
+          </div>
+          <div class="experience-item">
+            <h3>Blueplanet Solutions Pvt. Ltd</h3>
+            <p>Software Testing</p>
+            <p>
+              Worked on projects: Smartcookie, Startupworld, and Campus
+              TV/Radio.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
 
-</body>
+    <!-- Projects Section -->
+    <section id="projects">
+      <div class="container">
+        <h2>Projects</h2>
+        <div class="projects-box">
+          <div class="project-item">
+            <h3>Doctor Appointment System</h3>
+            <p>
+              Edoc is a Simple web project that is made for e-channeling Using
+              PHP,HTML & CSS. This project can also help doctors to manage their
+              appointment with their patients.
+            </p>
+            <a
+              href="https://github.com/PayalJadhav013/Doctor_Appointment_System"
+              class="project-link"
+              >VISIT WEBSITE</a
+            >
+          </div>
+          <div class="project-item">
+            <h3>IN-FACT</h3>
+            <p>
+              Food Product Analysis is a web-based application built with
+              Streamlit that helps users analyze packaged food products. The
+              application provides insights into the nutrients present in a
+              product and identifies harmful and non-harmful ingredients. Users
+              can visualize this information through interactive pie charts and
+              search/filter functionalities.
+            </p>
+            <a
+              href="https://github.com/PayalJadhav013/IN-FACT"
+              class="project-link"
+              >VISIT WEBSITE</a
+            >
+          </div>
+          <div class="project-item">
+            <h3>To-Do List Manager</h3>
+            <p>
+              A menu-driven Java application that allows users to add, update,
+              delete, and mark tasks as completed using JDBC and PostgreSQL.
+            </p>
+            <a
+              href="https://github.com/PayalJadhav013/To_Do_List_Manager_Core_Java"
+              class="project-link"
+              >VISIT WEBSITE</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills">
+      <div class="container">
+        <h2>Skills</h2>
+        <div class="skills-box">
+          <ul class="skills-list">
+            <li>C/C++ Programming</li>
+            <li>Core Java</li>
+            <li>HTML/CSS</li>
+            <li>JavaScript</li>
+            <li>Spring Boot Framework</li>
+            <li>MySQL/PostgreSQL</li>
+            <li>Machine Learning Basics</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications">
+      <div class="container">
+        <h2>Certifications</h2>
+        <div class="certifications-box">
+          <div class="certifications-item">
+            <h3>Frontend Web Development</h3>
+            <p>Certified by IBM SkillsBuild</p>
+          </div>
+          <div class="certifications-item">
+            <h3>C Programming</h3>
+            <p>Certified by Seed Infotech</p>
+          </div>
+          <div class="certifications-item">
+            <h3>C++ Programming</h3>
+            <p>Certified by Disha Institute</p>
+          </div>
+          <div class="certifications-item">
+            <h3>Software Testing</h3>
+            <p>Certified by Blueplanet Infosolutions India pvt.ltd</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <div class="container">
+        <h2>Contact</h2>
+        <div class="contact-box">
+          <ul class="social-links">
+            <li>
+              <a href="https://github.com/PayalJadhav013" target="_blank"
+                ><i class="fab fa-github"></i> GitHub</a
+              >
+            </li>
+            <li>
+              <a
+                href="https://www.linkedin.com/in/payal-jadhav-66254b247"
+                target="_blank"
+                ><i class="fab fa-linkedin"></i> LinkedIn</a
+              >
+            </li>
+            <li>
+              <a href="mailto:payalj0007@gmail.com"
+                ><i class="fas fa-envelope"></i> Email</a
+              >
+            </li>
+          </ul>
+          <!-- Contact Number with WhatsApp Link -->
+          <div class="contact-number">
+            <p>
+              Call or WhatsApp:
+              <a href="https://wa.me/918623004425" target="_blank"
+                >+91 8623004425</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <p>&copy; 2025 Payal Jadhav. All rights reserved.</p>
+      </div>
+    </footer>
+  </body>
 </html>
